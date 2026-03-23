@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8"> <!--يحدد ترميز النص العالمي-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--يخبر المتصفح ان حجم الموقع يجب ان يتكيف مع حجم الشاشة-->
+    <meta name="description" content="A simple HTML document with right-to-left text direction.">
+    <!--هوعبارة عن نص يعبر عن وصف للموقع-->
+    <meta name="robots" content="index, follow"><!--يخبر محركات البحث بفهرسة الصفحة وتتبع الروابط الموجودة فيها-->
+    <meta property="og:title" content="Simple HTML Document">
+    <meta property="og:description" content="A simple HTML document with right-to-left text direction.">
+    <!-- <meta property="og:image" content="path/to/image.jpg"> -->
+    <meta property="og:type" content="website">
+    <!--بروتوكول يتحكم في كيفية ضهور الصفحة في وسائل التواصل الاجتماعي في facebook-->
+    <meta name="author" content="Wiss_07"><!--يحدد مؤلف الصفحة-->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Simple HTML Document">
+    <meta name="twitter:description" content="A simple HTML document with right-to-left text direction.">
+    <meta name="twitter:image" content="path/to/image.jpg">
+    <!--بروتوكول يتحكم في كيفية ضهور الصفحة في وسائل التواصل الاجتماعي في twitter-->
+    <!-- <meta name="theme-color" content="#C8A2C8">يحدد لون الموضوع للصفحة -->
+    <meta http-equiv="content-security-policy"
+        content="default-src 'self'; img-src 'self' https:; style-src 'self' https: 'unsafe-inline'; script-src 'self' https: 'unsafe-inline'">
+    <!--يحدد سياسة الأمان للمحتوى للصفحة، مما يساعد في منع الهجمات مثل XSS عن طريق تحديد مصادر المحتوى المسموح بها.-->
+    <title>Document</title><!--يحدد عنوان الصفحة الذي يظهر في علامة التبويب للمتصفح وعند مشاركة الرابط-->
+    <link rel="stylesheet" href="styles.css"><!----يحدد ملف CSS خارجي لتنسيق الصفحة-->
+    <link rel="icon" type="image/x-icon" href="favicon.ico"><!--يحدد أيقونة الصفحة-->
+    <link rel="canonical" href="https://example.com/index.html"><!--يحدد الرابط canonical للصفحة-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <!--يخبر المتصفح بإنشاء اتصال مبكر مع خادم الخطوط لتحسين أداء تحميل الخطوط-->
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <!--يخبر المتصفح بإنشاء اتصال مبكر مع خادم الخطوط لتحسين أداء تحميل الخطوط-->
+    <link rel="preload" href="path/to/font.woff2" as="font" type="font/woff2" crossorigin>
+    <!--يخبر المتصفح بتحميل الخط مسبقاً لتحسين أداء العرض-->
+    <link rel="manifest" href="manifest.json"><!--يحدد ملف manifest للصفحة-->
+    <base href="https://example.com"><!--يحدد URL الأساسي لجميع الروابط النسبية في الصفحة-->
+</head>
+
+<body>
+    <h1>العنوان الرئيسي للصفحة</h1>
+    <h2>عنوان الموضوع الفرعي</h2>
+    <h3>عنوان القسم الفرعي</h3><!--يتم استخدام هذا لنوع من النصوص كعناوين و يجب ان تكونمرتبة بشكل منطقي-->
+    <p>هذا هو فقرة نصية تحتوي على بعض المعلومات حول الموضوع الرئيسي للصفحة. يمكن أن تحتوي هذه الفقرة على تفاصيل إضافية
+        أو شرح للمحتوى الذي يتم تقديمه.</p>
+    <u>هذا نص مسطر</u>
+    <ul><!--تسنخدم عندما يكون ترتيب العناصر غير مهم و تضعر على شكل نقاط-->
+        <li>عنصر في القائمة</li>
+        <li>عنصر آخر في القائمة</li>
+    </ul>
+    <ol><!--تسنخدم للنصوص المرتبة-->
+        <li>عنصر في القائمة المرتبة</li>
+        <li>عنصر آخر في القائمة المرتبة</li>
+    </ol>
+    <dl><!--تسنخدم لعرض المصطلحات وتعريفاتها-->
+        <dt>مصطلح</dt>
+        <dd>تعريف المصطلح</dd>
+    </dl>
+    <p><a href="https://google.com" target="_blank" rel="noopener noreferrer">زيارة Google</a></p>
+    <p><a href="about.html">عن الصفحة</a></p>
+    <p><a href="#section-5">القسم 5</a></p>
+    <p><a href="mailto:info@example.com">أرسل بريدًا إلكترونيًا</a></p>
+    <p><a href="file:+962798*****9">اتصل بالهاتف</a></p>
+    <p><a href="file.pdf" download="file.pdf">download PDF</a></p>
+    <p>price: <s>20</s> $19.99</p>
+    <p>the quick brown <del>fox</del>lion jumps over the lazy dog</p>
+    <img src="c:\Users\Nshwan Noel\Downloads\OIP.jpg" alt="a beautiful flower" width="600" height="400" loading="lazy">
+    <video width="600" height="400" controls>
+        <source src="c:\Users\Nshwan Noel\Downloads\المصفوفات في البرمجة ｜ Arrays： السر اللي بينظم الكود ويفتح.mp4"
+            type="video/mp4">
+        your browser does not support the video tag.
+    </video>
+    <audio src="c:\Users\Nshwan Noel\Downloads\ياروحي نوحي.mp3" type="audio/mpeg" controls>your browser does not support
+        the audio tag.</audio>
+    <iframe src="https://youtu.be/5beOlS5Ts24?si=MoVSr6dqTx4JunuQ" width="300" height="100" title="YouTube"
+        frameborder="0" allow="accelerometer; clipboard-write; encrypted-media; fullscreen;" allowfullscreen
+        loading="lazy"></iframe>
+    <table>
+        <caption>Table Caption</caption>
+        <thead>
+            <tr>
+                <th>Column 1</th>
+                <th>Column 2</th>
+                <th>Column 3</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Row 1, Cell 1</td>
+                <td>Row 1, Cell 2</td>
+                <td>Row 1, Cell 3</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <td>Footer 1</td>
+                <td>Footer 2</td>
+                <td>Footer 3</td>
+            </tr>
+        </tfoot>
+    </table>
+    <div>
+        <form action="/submit-data" method="post">
+            <p> <label for="name">Name:</label></p>
+            <p><input type="text" id="name" name="name" required></p>
+            <p><label for="password" maxlength="8"
+                    pattern="^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[@$!%*?&])[A-Za-z\d@$!%*?&]{8,}$">Password:</label></p>
+            <p><input type="password" id="password" name="password" required></p>
+            <p><label for="age">Age:</label></p>
+            <p><input type="number" id="age" name="age"></p>
+            <p><label for="birthdate">Birth Date:</label></p>
+            <p><input type="date" id="birthdate" name="birthdate"></p>
+            <p><label for="phone">Phone:</label></p>
+            <p><input type="tel" id="phone" name="phone"></p>
+            <p><label for="email">Email:</label></p>
+            <p><input type="email" id="email" name="email" required></p>
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+    <header>
+        <h1>Header Section</h1>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+    <main>
+        <section>
+            <h2>Main Content</h2>
+            <p>This is the main content area of the page.</p>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2023 My Website. All rights reserved.</p>
+    </footer>
+</body>
+
+</html>
